@@ -1,0 +1,31 @@
+{
+  "name": "async-middleware-ts",
+  "version": "1.0.0",
+  "description": "A lightweight promise based async middleware package with complete typings",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepublish": "yarn run build",
+    "precommit": "lint-staged",
+    "lint": "tslint -p tsconfig.json #",
+    "test": "jest ./dist"
+  },
+  "author": "Pranit Harekar <pranitharekar@hotmail.com>",
+  "devDependencies": {
+    "@types/jest": "^21.1.9",
+    "jest": "^22.0.4",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "ts-jest": "^22.0.0",
+    "babel-jest": "^22.0.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.6.2"
+  },
+  "types": "dist/types/index.d.ts",
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": ["prettier --write", "yarn lint", "git add"]
+  },
+  "babel": {
+    "plugins": ["transform-es2015-modules-commonjs"]
+  }
+}

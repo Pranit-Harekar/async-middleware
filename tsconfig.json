@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015",
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "newLine": "LF",
+    "declarationDir": "dist/types",
+    "outDir": "dist",
+    "baseUrl": "./",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
