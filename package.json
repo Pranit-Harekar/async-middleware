@@ -1,6 +1,6 @@
 {
   "name": "async-middleware-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight promise based async middleware package with complete typings",
   "main": "dist/index.js",
   "scripts": {
@@ -23,9 +23,15 @@
   },
   "types": "dist/types/index.d.ts",
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": ["prettier --write", "yarn lint", "git add"]
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "yarn lint",
+      "git add"
+    ]
   },
   "babel": {
-    "plugins": ["transform-es2015-modules-commonjs"]
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
   }
 }
